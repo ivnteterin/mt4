@@ -1,8 +1,8 @@
 .heading-1 {
-	@include absolute-center;
 	color: $font-color;
 	font-family: $heading-font;
 	font-size: $font-size-h1;
+	margin-bottom: 4rem;
 
 	display: flex;
 	justify-content: center;
@@ -13,4 +13,11 @@
 		height: auto;
 		margin: 0 2rem;
 	}
+}
+
+p {
+	color: $font-color;
+	font-family: $primary-font;
+	font-weight: 500;
+	font-size: $font-size-s;
 }

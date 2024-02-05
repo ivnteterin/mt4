@@ -5,6 +5,28 @@
 	display: flex;
 	justify-content: space-around;
 
+	&__content-wrapper {
+		@include absolute-center;
+		top: 40%;
+	}
+
+	&__qr-figure {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 2.5rem;
+
+		img {
+			width: 10rem;
+			height: auto;
+		}
+
+		p {
+			width: 17rem;
+			text-align: left;
+		}
+	}
+
 	&__box-figure {
 		width: 40rem;
 		height: 40rem;
