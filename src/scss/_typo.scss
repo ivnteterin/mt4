@@ -1,0 +1,16 @@
+.heading-1 {
+	@include absolute-center;
+	color: $font-color;
+	font-family: $heading-font;
+	font-size: $font-size-h1;
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	&__logo {
+		width: 6.5rem;
+		height: auto;
+		margin: 0 2rem;
+	}
+}
