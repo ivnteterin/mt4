@@ -1,0 +1,10 @@
+.mt4-header {
+	background-color: $primary-color;
+	text-align: center;
+
+	&__logo {
+		width: 9rem;
+		margin: 4rem 0;
+		height: auto;
+	}
+}

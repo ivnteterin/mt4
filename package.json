@@ -1,0 +1,15 @@
+{
+	"name": "mt4",
+	"version": "1.0.0",
+	"description": "mt4 website",
+	"main": "index.js",
+	"scripts": {
+		"sass:compile": "sass --style=compressed src/main.scss dist/style.css",
+		"sass:watch": "npm run sass:compile -- --watch"
+	},
+	"author": "ivnteterin",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.70.0"
+	}
+}

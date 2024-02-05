@@ -1,0 +1,20 @@
+.mt4-hero {
+	background-color: $primary-color;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+
+	&__box-figure {
+		width: 40rem;
+		height: 40rem;
+		background-image: url('../../dist/svg/square.svg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		margin-bottom: 4rem;
+
+		&--drawing {
+			background-image: url('../../dist/svg/drawing.svg');
+		}
+	}
+}

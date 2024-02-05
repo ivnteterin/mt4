@@ -1,0 +1,26 @@
+// Colors
+
+$primary-color: #f6f3ef;
+$background-color: #fff;
+$light-grey: #f4f6f7;
+$font-color: #2d3436;
+
+// Fonts
+$heading-font: 'Futura PT', sans-serif;
+$primary-font: 'Inter', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
+
+// Common
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: $background-color;
+}
+
+html {
+	font-size: 62.5%;
+}
