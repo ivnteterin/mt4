@@ -2,8 +2,13 @@
 	position: relative;
 	background-color: $primary-color;
 	text-align: center;
-	display: flex;
-	justify-content: space-around;
+
+	&__wrapper {
+		max-width: $max-width;
+		display: flex;
+		justify-content: space-around;
+		margin: 0 auto;
+	}
 
 	&__content-wrapper {
 		@include absolute-center;
@@ -24,6 +29,11 @@
 		p {
 			width: 17rem;
 			text-align: left;
+		}
+
+		nav {
+			max-width: $max-width;
+			margin: 0 auto;
 		}
 	}
 
