@@ -8,11 +8,12 @@
 		display: flex;
 		justify-content: space-around;
 		margin: 0 auto;
+		padding-bottom: 10rem;
 	}
 
 	&__content-wrapper {
 		@include absolute-center;
-		top: 40%;
+		top: 35%;
 	}
 
 	&__qr-figure {
@@ -24,6 +25,7 @@
 		img {
 			width: 10rem;
 			height: auto;
+			margin-left: 7rem;
 		}
 
 		p {
@@ -38,12 +40,9 @@
 	}
 
 	&__box-figure {
-		width: 40rem;
-		height: 40rem;
-		background-image: url('../../dist/svg/square.svg');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
+		@include background-cover('../../dist/svg/square.svg');
+		width: 42rem;
+		height: 42rem;
 		margin-bottom: 4rem;
 
 		&--drawing {

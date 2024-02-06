@@ -1,0 +1,69 @@
+.mt4-overview {
+	max-width: $max-width;
+	margin: 0 auto;
+	position: relative;
+
+	&__content {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__figure {
+		position: relative;
+		&__img {
+			width: 30rem;
+			height: auto;
+			z-index: 999;
+			@include absolute-center;
+		}
+
+		&__img:first-of-type {
+			left: -13rem;
+			width: 22.5rem;
+		}
+		&__img:last-of-type {
+			left: 13rem;
+			width: 22.5rem;
+		}
+	}
+
+	&__text-block {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 44rem;
+			width: 47rem;
+			z-index: -1;
+			@include absolute-center;
+			@include background-cover('../../dist/svg/ellipse_yellow.svg');
+		}
+
+		&--de-emphasis:before {
+			height: 66rem;
+			width: 70rem;
+			z-index: -1;
+			left: -2rem;
+			top: 9rem;
+			@include background-cover('../../dist/svg/ellipse_transparent.svg');
+		}
+	}
+
+	&__text {
+		width: 27rem;
+		font-size: $font-size-m;
+
+		&--emphasis {
+			font-family: $primary-font;
+			font-size: $font-size-l;
+			font-weight: 600;
+		}
+	}
+}
