@@ -1,0 +1,75 @@
+.mt4-call-to-action {
+	max-width: $max-width;
+	margin: 0 auto;
+	position: relative;
+	z-index: 100;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 4rem;
+		padding: 0 15rem;
+		margin-top: 10rem;
+	}
+
+	&__text-block {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		gap: 2rem;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 65rem;
+			width: 69rem;
+			z-index: -1;
+			@include absolute-center;
+			left: 63%;
+			top: 100%;
+			@include background-cover('../../dist/svg/ellipse_transparent.svg');
+		}
+	}
+
+	&__text {
+		max-width: 48rem;
+		font-size: $font-size-l;
+		font-family: $primary-font;
+		color: $font-color;
+		font-weight: 600;
+	}
+
+	&__figure {
+		position: relative;
+		height: 65rem;
+		width: 69rem;
+		z-index: -1;
+		@include background-cover('../../dist/svg/ellipse_blue.svg');
+
+		&__img {
+			max-width: 29rem;
+			border-radius: 1.5rem;
+			box-shadow: 0px 0px 30px 0px #0000001a;
+			@include absolute-center;
+		}
+
+		&__img:first-of-type {
+			top: 45%;
+			left: 40%;
+		}
+
+		&__img:last-of-type {
+			top: 55%;
+			left: 60%;
+		}
+	}
+
+	.mt4__qr-figure {
+		justify-content: left;
+		img {
+			margin-left: 0;
+		}
+	}
+}

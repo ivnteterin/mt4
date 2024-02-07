@@ -1,0 +1,45 @@
+.mt4-download-app {
+	max-width: $max-width;
+	margin: 0 auto;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		margin: 0 auto;
+		padding-bottom: 5rem;
+		gap: 4rem;
+	}
+
+	&__text {
+		max-width: 57rem;
+		text-align: center;
+		color: $font-black;
+		font-weight: 600;
+		font-size: $font-size-l;
+
+		span {
+			text-decoration: underline;
+		}
+	}
+
+	&__icon {
+		width: 15rem;
+		height: 15rem;
+		position: relative;
+		background-color: $light-grey;
+		border-radius: 3rem;
+
+		img {
+			@include absolute-center;
+			width: 9rem;
+			height: auto;
+		}
+	}
+
+	&__stores {
+		display: flex;
+		gap: 2rem;
+	}
+}

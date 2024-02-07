@@ -16,27 +16,9 @@
 		top: 35%;
 	}
 
-	&__qr-figure {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 2.5rem;
-
-		img {
-			width: 10rem;
-			height: auto;
-			margin-left: 7rem;
-		}
-
-		p {
-			width: 17rem;
-			text-align: left;
-		}
-
-		nav {
-			max-width: $max-width;
-			margin: 0 auto;
-		}
+	nav {
+		max-width: $max-width;
+		margin: 0 auto;
 	}
 
 	&__box-figure {
@@ -48,5 +30,23 @@
 		&--drawing {
 			background-image: url('../../dist/svg/drawing.svg');
 		}
+	}
+}
+
+.mt4__qr-figure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2.5rem;
+
+	img {
+		width: 10rem;
+		height: auto;
+		margin-left: 7rem;
+	}
+
+	p {
+		width: 17rem;
+		text-align: left;
 	}
 }
