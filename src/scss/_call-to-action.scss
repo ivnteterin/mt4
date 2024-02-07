@@ -115,3 +115,9 @@
 		}
 	}
 }
+
+@media screen and (max-width: $mq-s) {
+	.mt4-call-to-action {
+		overflow: hidden;
+	}
+}
