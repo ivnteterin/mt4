@@ -22,13 +22,13 @@
 	}
 
 	&__box-figure {
-		@include background-cover('../../dist/svg/square.svg');
+		@include background-cover('svg/square.svg');
 		width: 42rem;
 		height: 42rem;
 		margin-bottom: 4rem;
 
 		&--drawing {
-			background-image: url('../../dist/svg/drawing.svg');
+			background-image: url('svg/drawing.svg');
 		}
 	}
 }

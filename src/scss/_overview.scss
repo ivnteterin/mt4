@@ -1,6 +1,6 @@
 .mt4-overview {
 	max-width: $max-width;
-	margin: 0 auto 30rem;
+	margin: 0 auto 25rem;
 	position: relative;
 
 	&__content {
@@ -14,7 +14,7 @@
 		&__img {
 			width: 30rem;
 			height: auto;
-			border-radius: 1.5rem;
+			border-radius: 5.5rem;
 			box-shadow: 0px 0px 30px 0px #0000001a;
 			z-index: 999;
 			@include absolute-center;
@@ -22,10 +22,12 @@
 
 		&__img:first-of-type {
 			left: -13rem;
+			border-radius: 1.5rem;
 			width: 22.5rem;
 		}
 		&__img:last-of-type {
 			left: 13rem;
+			border-radius: 1.5rem;
 			width: 22.5rem;
 		}
 	}
@@ -45,7 +47,7 @@
 			width: 47rem;
 			z-index: -1;
 			@include absolute-center;
-			@include background-cover('../../dist/svg/ellipse_yellow.svg');
+			@include background-cover('svg/ellipse_yellow.svg');
 		}
 
 		&--de-emphasis:before {
@@ -54,7 +56,7 @@
 			z-index: -1;
 			left: -2rem;
 			top: 9rem;
-			@include background-cover('../../dist/svg/ellipse_transparent.svg');
+			@include background-cover('svg/ellipse_transparent.svg');
 		}
 	}
 

@@ -29,7 +29,7 @@
 			@include absolute-center;
 			left: 63%;
 			top: 100%;
-			@include background-cover('../../dist/svg/ellipse_transparent.svg');
+			@include background-cover('svg/ellipse_transparent.svg');
 		}
 	}
 
@@ -46,7 +46,7 @@
 		height: 65rem;
 		width: 69rem;
 		z-index: -1;
-		@include background-cover('../../dist/svg/ellipse_blue.svg');
+		@include background-cover('svg/ellipse_blue.svg');
 
 		&__img {
 			max-width: 29rem;
