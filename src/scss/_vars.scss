@@ -8,6 +8,13 @@ $font-color: #2d3436;
 $font-black: #000;
 $font-bold: #b68756;
 
+// Media queries widths
+$mq-xs: 321px;
+$mq-s: 600px;
+$mq-m: 1000px;
+$mq-l: 1280px;
+$mq-xl: 1600px;
+
 // Fonts
 $heading-font: 'Jost', sans-serif;
 $primary-font: 'Inter', sans-serif;
@@ -37,9 +44,32 @@ html {
 	scroll-behavior: smooth;
 }
 
+@media (max-width: $mq-l) {
+	html {
+		font-size: 60%;
+	}
+}
+
+@media (max-width: $mq-s) {
+	html {
+		font-size: 55%;
+	}
+}
+
+@media (max-width: $mq-xs) {
+	html {
+		font-size: 45%;
+	}
+}
+
 // Icons
 
 .mt4-app {
 	width: 16rem;
 	height: auto;
+	transition: all 0.1s ease-in-out;
+	cursor: pointer;
+	&:hover {
+		transform: scale(1.1);
+	}
 }

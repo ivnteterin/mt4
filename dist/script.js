@@ -5,6 +5,7 @@ const dot2 = document.getElementById('dot2');
 const dot3 = document.getElementById('dot3');
 
 const featuresSection = document.querySelector('.mt4-features');
+const featuresWrapper = document.querySelector('.mt4-features__wrapper');
 
 const dotClicks = (dot, scroll, otherDots) => {
 	dot.addEventListener('click', () => {
@@ -21,17 +22,17 @@ const addActiveClass = (dot, otherDots) => {
 };
 
 dotClicks(dot1, 0, [dot2, dot3]);
-dotClicks(dot2, featuresSection.scrollWidth / 4, [dot1, dot3]);
+dotClicks(dot2, (featuresSection.scrollWidth - featuresSection.clientWidth) / 2, [dot1, dot3]);
 dotClicks(dot3, featuresSection.scrollWidth / 2, [dot1, dot2]);
 
 featuresSection.addEventListener('scroll', () => {
 	if (featuresSection.scrollLeft < featuresSection.scrollWidth / 6) {
 		addActiveClass(dot1, [dot2, dot3]);
-	} else if (featuresSection.scrollLeft < featuresSection.scrollWidth / 3) {
+	} else if (featuresSection.scrollLeft < (featuresSection.scrollWidth - featuresSection.clientWidth) / 2 + 1) {
 		addActiveClass(dot2, [dot1, dot3]);
 	} else {
 		addActiveClass(dot3, [dot1, dot2]);
 	}
 });
 
-featuresSection.scrollLeft = featuresSection.scrollWidth / 4;
+featuresSection.scrollLeft = (featuresSection.scrollWidth - featuresSection.clientWidth) / 2;

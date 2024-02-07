@@ -1,6 +1,6 @@
 .mt4-footer {
 	max-width: 120rem;
-	margin: 10rem 5rem;
+	margin: 10rem auto;
 	text-align: center;
 	border-radius: 1rem;
 	background-color: $primary-color;
@@ -11,5 +11,19 @@
 	span {
 		color: $font-bold;
 		border-bottom: 2px solid $font-bold;
+	}
+}
+
+@media screen and (max-width: $mq-l) {
+	.mt4-footer {
+		font-size: $font-size-m;
+		margin: 10rem;
+	}
+}
+
+@media screen and (max-width: $mq-s) {
+	.mt4-footer {
+		font-size: $font-size-m;
+		margin: 3rem;
 	}
 }

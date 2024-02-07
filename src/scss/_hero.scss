@@ -1,14 +1,26 @@
 .mt4-hero {
-	position: relative;
 	background-color: $primary-color;
 	text-align: center;
+	overflow: hidden;
+
+	@media screen and (max-width: $mq-m) {
+		padding-top: 3rem;
+	}
 
 	&__wrapper {
 		max-width: $max-width;
 		display: flex;
+		gap: 3rem;
 		justify-content: space-around;
 		margin: 0 auto;
+		position: relative;
 		padding-bottom: 10rem;
+	}
+
+	@media screen {
+		&__wrapper {
+			padding-bottom: 18rem;
+		}
 	}
 
 	&__content-wrapper {
@@ -29,6 +41,19 @@
 
 		&--drawing {
 			background-image: url('svg/drawing.svg');
+			position: absolute;
+			&:first-of-type {
+				left: 0;
+			}
+			&:last-of-type {
+				right: 0;
+			}
+		}
+
+		@media screen and (max-width: $mq-m) {
+			&--drawing {
+				display: none;
+			}
 		}
 	}
 }
@@ -40,13 +65,39 @@
 	gap: 2.5rem;
 
 	img {
-		width: 10rem;
-		height: auto;
 		margin-left: 7rem;
 	}
 
 	p {
 		width: 17rem;
 		text-align: left;
+	}
+}
+
+.mt4-app-stores {
+	display: none;
+}
+
+@media screen and (max-width: $mq-m) {
+	.mt4__qr-figure {
+		flex-direction: column;
+		.qr {
+			display: none;
+		}
+		img {
+			margin-left: 0;
+		}
+		p {
+			text-align: center;
+		}
+	}
+
+	.mt4-app-stores {
+		display: flex;
+		margin-top: 1rem;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
 	}
 }

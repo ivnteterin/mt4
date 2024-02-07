@@ -14,7 +14,7 @@
 		width: max-content;
 		display: flex;
 		gap: 3rem;
-		margin: 0 20rem;
+		margin: 0 10rem;
 		padding-bottom: 10rem;
 		scroll-snap-type: x mandatory;
 	}
@@ -47,6 +47,28 @@
 		}
 		&__text {
 			font-size: $font-size-m;
+		}
+	}
+
+	@media screen and (max-width: $mq-l) {
+		&__block {
+			width: 65rem;
+			padding: 5rem 7rem;
+		}
+		&__text-block {
+			width: 22rem;
+		}
+		&__text {
+			font-size: $font-size-s;
+		}
+	}
+
+	@media screen and (max-width: $mq-s) {
+		&__block {
+			flex-direction: column;
+			width: 70%;
+			height: 60rem;
+			padding: 4rem;
 		}
 	}
 
